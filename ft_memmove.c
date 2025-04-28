@@ -6,7 +6,7 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 14:48:45 by luimarti          #+#    #+#             */
-/*   Updated: 2025/04/24 20:27:44 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/04/28 18:59:20 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,8 @@ void	*ft_memmove(void *dest, void *src, size_t n)
 
 // int main() 
 // { 
-// 	char csrc[100] = "Geeksfor"; 
-// 	ft_memmove(csrc+5, csrc, 9); 
+// 	char csrc[100] = "HelloWorld"; 
+// 	ft_memmove(csrc+5, csrc, 11); 
 // 	printf("%s", csrc); 
 // 	return 0; 
 // } 
