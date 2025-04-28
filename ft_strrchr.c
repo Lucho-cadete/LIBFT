@@ -6,7 +6,7 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 11:07:21 by luimarti          #+#    #+#             */
-/*   Updated: 2025/04/28 12:40:36 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/04/28 12:48:06 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,16 @@ char	*ft_strchr(const char *str, int c)
 
 	i = 0;
 	while (str[i] != '\0')
-		i++;
-	while (i >= 0)
+		str++;
+	while (str[i] >= '\0')
 	{
 		if (str[i] == (char)c)
 		{
-			return ((char *)&str[i]);
+			return ((char *)str);
 		}
 		else
 		{
-			i--;
+			str--;
 		}
 	}
 	return (NULL);
