@@ -6,7 +6,7 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 10:59:02 by luimarti          #+#    #+#             */
-/*   Updated: 2025/04/28 12:39:21 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/04/28 15:50:45 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,13 @@ char	*ft_strchr(const char *str, int c)
 	}
 	return (NULL);
 }
-int main()
-{
-	const char str [] = "HelloWorld";
-	char *result = ft_strchr(str, 'l');
-	int index = result - str;
-	printf ("%d\n", index);
-	return (0);
-}
+// int main()
+// {
+// 	const char str [] = "HelloWorld";
+// 	char *result = ft_strchr(str, 'l');
+// 	int index = result - str;
+// 	printf ("%d\n", index);
+// 	return (0);
+// }
 
 // //Casting is needed!
