@@ -6,13 +6,13 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 17:33:46 by luimarti          #+#    #+#             */
-/*   Updated: 2025/04/22 17:38:23 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/04/30 17:46:20 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_isdigit(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);
@@ -25,6 +25,6 @@ int	ft_isdigit(int c)
 //     char c;
 
 //     c = 'd';
-//     printf("%d", ft_isdigit(c));
+//     printf("%d", ft_isascii(c));
 //     return(0);
 // }
