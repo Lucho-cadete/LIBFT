@@ -1,0 +1,45 @@
+NAME=libt.a
+SRC=ft_atoi.c/
+	ft_bzero.c/
+	ft_isalpha.c/
+	ft_ascii.c/
+	ft_isdigit.c/
+	ft_islanum.c/
+	ft_isprint.c/ 
+	ft_memchr.c/
+	ft_memcmp.c/
+	ft_memcpy.c/
+	ft_memmove.c/
+	ft_memset.c/
+	ft_strchr.c/
+	ft_strlcat.c/
+	ft_strlcpy.c/
+	ft_strlen.c/ 
+	ft_strncmp.c/
+	ft_strnstr.c/
+	ft_strrchr.c/
+	ft_tolower.c/
+	ft_toupper.c 
+
+OBJ=$(SRC: .c=.o)
+CC=CC
+CFLAGS=-Wall -Wextra -Werror
+
+.phony: all clean fclean re
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	ar rcs $(NAME) $(OBJ)
+
+%.O: %.C LIBFT.H
+	$(CC) $(CFLAGS) -c $ < -o $@
+
+clean
+	rm -f $(OBJ)
+	@echo "\033[1;31m🧹Deleted\033[0m"
+
+fclean
+	rm -f $(NAME)
+	@echo "\033[1;31m🗑️included$(NAME)\033[0m"
+
+re: fclean all
