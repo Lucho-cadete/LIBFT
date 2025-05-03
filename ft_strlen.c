@@ -6,15 +6,15 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 13:59:01 by luimarti          #+#    #+#             */
-/*   Updated: 2025/04/24 21:36:46 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/05/03 18:54:44 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
-	int	length;
+	size_t	length;
 
 	length = 0;
 	while (str[length] != '\0')

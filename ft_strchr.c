@@ -6,7 +6,7 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 10:59:02 by luimarti          #+#    #+#             */
-/*   Updated: 2025/04/28 15:50:45 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/05/03 19:17:14 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,18 +22,23 @@ char	*ft_strchr(const char *str, int c)
 	while (str[i] != '\0')
 	{
 		if (str[i] == (char)c)
-			return ((char *)str);
-		str++;
+			return ((char *)&str[i]);
+		i++;
 	}
+	if (str[i] == (char)c)
+		return ((char *)&str[i]);
 	return (NULL);
 }
-// int main()
+// int main(void)
 // {
 // 	const char str [] = "HelloWorld";
-// 	char *result = ft_strchr(str, 'l');
-// 	int index = result - str;
-// 	printf ("%d\n", index);
+// 	char *result = ft_strchr(str, '\0');
+// 	char *test = strchr(str, '\0');
+
+// 	printf ("%p\n", result);
+// 	printf ("%p\n", test);
 // 	return (0);
 // }
 
 // //Casting is needed!
+// la resta de result - str resta su posicion en la memoria!
