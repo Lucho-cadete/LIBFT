@@ -6,7 +6,7 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 15:17:01 by luimarti          #+#    #+#             */
-/*   Updated: 2025/05/03 16:51:12 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/05/03 17:06:38 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,32 +37,32 @@ char	*ft_strdup(const char *s)
 	return (copy);
 }
 
-int main ()
-{
-	const char *src = "HelloWorld!";
-	char *copy = ft_strdup(src);
-	char *testcopy = strdup(src);
-	size_t i = 0;
-	int equals = 1;
+// int main ()
+// {
+// 	const char *src = "HelloWorld!";
+// 	char *copy = ft_strdup(src);
+// 	char *testcopy = strdup(src);
+// 	size_t i = 0;
+// 	int equals = 1;
 
-	if (!copy || !testcopy)
-	{
-		printf ("Error: Duplication failed.\n");
-		free(copy);
-		free(testcopy);
-		return (1);
-	}
-	while (copy[i] != '\0' && testcopy[i] != '\0')
-	{
-		if (copy[i] != testcopy[i])
-			equals = 0;
-		i++;
-	}
-	if (equals)
-		printf ("✅ Match!: %s\n", copy);
-	else
-		printf ("❌ Both strings do not match!\n");
-	free(copy);
-	free(testcopy);
-	return (0);
-}
+// 	if (!copy || !testcopy)
+// 	{
+// 		printf ("Error: Duplication failed.\n");
+// 		free(copy);
+// 		free(testcopy);
+// 		return (1);
+// 	}
+// 	while (copy[i] != '\0' && testcopy[i] != '\0')
+// 	{
+// 		if (copy[i] != testcopy[i])
+// 			equals = 0;
+// 		i++;
+// 	}
+// 	if (equals)
+// 		printf ("✅ Match!: %s\n", copy);
+// 	else
+// 		printf ("❌ Both strings do not match!\n");
+// 	free(copy);
+// 	free(testcopy);
+// 	return (0);
+// }

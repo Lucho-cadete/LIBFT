@@ -6,7 +6,7 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/09 17:04:41 by luimarti          #+#    #+#             */
-/*   Updated: 2025/05/03 14:13:45 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/05/03 17:07:10 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ int	ft_atoi(const char *str)
 		if (str[i] == '-')
 			neg = -1;
 		i++;
-
 		if (str[i] == '+' || str[i] == '-')
 			return (0);
 	}

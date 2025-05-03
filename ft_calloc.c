@@ -6,7 +6,7 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 10:18:48 by luimarti          #+#    #+#             */
-/*   Updated: 2025/05/03 16:48:33 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/05/03 17:09:55 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,9 +54,9 @@ void	*ft_calloc(size_t nmemb, size_t size)
 //     }
 
 //     if (identical)
-//         printf("✅ Both calloc versions behave the same (memory zeroed).\n");
+//         printf("✅ Both versions match.\n");
 //     else
-//         printf("❌ Mismatch: calloc and ft_calloc produce different memory content.\n");
+//         printf("❌ Versions does not match.\n");
 
 //     free(my_calloc);
 //     free(std_calloc);

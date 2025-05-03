@@ -6,13 +6,13 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 13:09:27 by luimarti          #+#    #+#             */
-/*   Updated: 2025/05/03 16:48:23 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/05/03 17:15:15 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-#include <stddef.h>
+# include <stddef.h>
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *ptr, size_t num);
