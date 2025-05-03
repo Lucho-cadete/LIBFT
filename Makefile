@@ -1,4 +1,4 @@
-NAME= libt.a
+NAME= libft.a
 SRC=ft_atoi.c\
 	ft_bzero.c\
 	ft_isalpha.c\
@@ -19,7 +19,8 @@ SRC=ft_atoi.c\
 	ft_strnstr.c\
 	ft_strrchr.c\
 	ft_tolower.c\
-	ft_toupper.c 
+	ft_toupper.c\
+	ft_calloc.c 
 
 OBJ=$(SRC:.c=.o)
 

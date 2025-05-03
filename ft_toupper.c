@@ -6,32 +6,23 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 10:36:51 by luimarti          #+#    #+#             */
-/*   Updated: 2025/04/28 10:55:36 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/05/03 13:31:30 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
 
-int	ft_toupper(char *str)
+int	ft_toupper(int c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] >= 97 && str[i] <= 122)
-		{
-			str[i] = str[i] - 32;
-		}
-		i++;
-	}
-	return (0);
+	if (c >= 97 && c <= 122)
+		return (c - 32);
+	return (c);
 }
 // int main()
 // {
-// 	char str [] = "HelloWorld";
-// 	ft_toupper(str);
-// 	printf ("%s", str);
+// 	char s = 'm';
+// 	s = ft_toupper(s);
+// 	printf ("%c\n", s);
 // 	return (0);
 // }
