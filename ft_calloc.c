@@ -6,7 +6,7 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 10:18:48 by luimarti          #+#    #+#             */
-/*   Updated: 2025/05/03 17:09:55 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/05/03 20:11:33 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		tmp [i++] = 0;
 	return (tmp);
 }
-
+//nmemb * size needed in case of the size of char changes in the system.
 // int main ()
 // {
 // 	size_t n = 10;
