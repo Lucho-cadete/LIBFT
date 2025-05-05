@@ -6,7 +6,7 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 13:55:31 by luimarti          #+#    #+#             */
-/*   Updated: 2025/05/03 18:49:11 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/05/05 17:51:12 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int	ft_strncmp(char *s1, char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	stop;
 
@@ -36,9 +36,10 @@ int	ft_strncmp(char *s1, char *s2, size_t n)
 
 // int main (void)
 // {
-// 	char a [] = "test\200";
-// 	char b [] = "long\0";
-// 	printf ("%d\n", ft_strncmp (a ,b, 6));
-// 	printf ("%d\n", strncmp (a, b, 6));
+// 	char a [] = "";
+// 	char b [] = "";
+// 	int	i = 1;
+// 	printf ("%d\n", ft_strncmp (a ,b, i));
+// 	printf ("%d\n", strncmp (a, b, i));
 // 	return (0);
 // }

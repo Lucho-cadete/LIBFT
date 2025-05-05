@@ -6,14 +6,14 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 14:48:45 by luimarti          #+#    #+#             */
-/*   Updated: 2025/04/24 21:24:38 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/05/05 17:53:25 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
 
-char	*ft_memcpy(void *dest, void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*cdest;
 	unsigned char	*csrc;
