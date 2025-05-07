@@ -6,7 +6,7 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 17:59:29 by luimarti          #+#    #+#             */
-/*   Updated: 2025/05/06 17:18:16 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/05/07 18:09:31 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include "libft.h"
 
 static int	subarray_count(const char *s, char c);
-static char **fill_split(char **big, const char *s, int word_count, char c);
+static char	**fill_split(char **big, const char *s, int word_count, char c);
 static void	*free_split(char **big, int filled);
 
 char	**ft_split(const char *s, char c)
@@ -30,7 +30,7 @@ char	**ft_split(const char *s, char c)
 	big = (char **)ft_calloc((word_count + 1), sizeof(char *));
 	if (!big)
 		return (NULL);
-	return (fill_split(big, s, c, word_count));
+	return (fill_split(big, s, word_count, c));
 }
 
 static int	subarray_count(const char *s, char c)
@@ -56,12 +56,12 @@ static int	subarray_count(const char *s, char c)
 	return (count);
 }
 
-static char **fill_split(char **big, const char *s, int word_count, char c)
+static char	**fill_split(char **big, const char *s, int word_count, char c)
 {
-	const char *str;
-	int i;
-	int len;
-	
+	const char	*str;
+	int			i;
+	int			len;
+
 	i = 0;
 	while (*s && i < word_count)
 	{
@@ -74,12 +74,13 @@ static char **fill_split(char **big, const char *s, int word_count, char c)
 			s++;
 			len++;
 		}
-		big[i] = ft_calloc(len + 1, sizeof(char));
+		big[i] = (char *)ft_calloc(len + 1, sizeof(char));
 		if (!big[i])
 			return (free_split(big, i));
 		ft_strlcpy (big[i], str, len + 1);
 		i++;
 	}
+	big[i] = NULL;
 	return (big);
 }
 
@@ -97,29 +98,29 @@ static void	*free_split(char **big, int filled)
 	return (NULL);
 }
 
-int main (void)
-{
-	char *array = ",,,,Hello,world,,from,,,Codam!";
-	char del = ',';
-	char **result;
-	int i;
-	i = 0;
-	result = ft_split (array, del);
-	if (!result)
-	{
-		printf ("Error! ft_splt does not work.\n");
-		return (1);
-	}
-	while (result[i])
-	{
-		printf ("Subarray %d: %s\n", i, result[i]);
-		i++;
-	}
-	i = 0;
-		while (result[i])
-	{
-		free(result[i]);
-		i++;
-	}
-	return (0);
-}
+// int main (void)
+// {
+// 	char *array = ",,,,Hello,world,,from,,,Codam!";
+// 	char del = ',';
+// 	char **result;
+// 	int i;
+// 	i = 0;
+// 	result = ft_split (array, del);
+// 	if (!result)
+// 	{
+// 		printf ("Error! ft_splt does not work.\n");
+// 		return (1);
+// 	}
+// 	while (result[i])
+// 	{
+// 		printf ("Subarray %d: %s\n", i, result[i]);
+// 		i++;
+// 	}
+// 	i = 0;
+// 		while (result[i])
+// 	{
+// 		free(result[i]);
+// 		i++;
+// 	}
+// 	return (0);
+// }
