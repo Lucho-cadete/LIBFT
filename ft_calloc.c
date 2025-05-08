@@ -6,18 +6,23 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 10:18:48 by luimarti          #+#    #+#             */
-/*   Updated: 2025/05/03 20:11:33 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/05/08 14:32:47 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <limits.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	unsigned char	*tmp;
 	size_t			i;
 
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+	if (nmemb > __SIZE_MAX__ / size)
+		return (NULL);
 	tmp = malloc (nmemb * size);
 	i = 0;
 	if (!tmp)
