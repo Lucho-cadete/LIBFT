@@ -6,7 +6,7 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 14:48:45 by luimarti          #+#    #+#             */
-/*   Updated: 2025/05/05 17:53:25 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/05/08 19:59:30 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*csrc;
 	size_t			i;
 
+	if (!dest && !src)
+		return (NULL);
 	cdest = (unsigned char *) dest;
 	csrc = (unsigned char *) src;
 	i = 0;

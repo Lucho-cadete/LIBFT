@@ -6,7 +6,7 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 10:59:02 by luimarti          #+#    #+#             */
-/*   Updated: 2025/05/03 19:17:14 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/05/08 19:20:50 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,11 @@ char	*ft_strchr(const char *str, int c)
 // int main(void)
 // {
 // 	const char str [] = "HelloWorld";
-// 	char *result = ft_strchr(str, '\0');
-// 	char *test = strchr(str, '\0');
+// 	char *result = ft_strchr(str, 'o');
+// 	char *test = strchr(str, 'o');
 
-// 	printf ("%p\n", result);
-// 	printf ("%p\n", test);
+// 	printf ("%s\n", result);
+// 	printf ("%s\n", test);
 // 	return (0);
 // }
 

@@ -6,7 +6,7 @@
 /*   By: luimarti <luimarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/08 15:46:52 by luimarti          #+#    #+#             */
-/*   Updated: 2025/05/08 17:24:32 by luimarti         ###   ########.fr       */
+/*   Updated: 2025/05/08 18:46:36 by luimarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,18 +29,18 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	}
 }
 
-void		test_f(unsigned int i, char *c)
-{
-	(void)i;
-	*c = ft_toupper(*c);
-}
+// void		test_f(unsigned int i, char *c)
+// {
+// 	(void)i;
+// 	*c = ft_toupper(*c);
+// }
 
-int main (void)
-{
-	char s[] = "helloworld!";
+// int main (void)
+// {
+// 	char s[] = "helloworld!";
 
-	printf ("Original: %s.\n", s);
-	ft_striteri(s, test_f);
-	printf ("Final: %s.\n", s);
-	return (0);
-}
+// 	printf ("Original: %s.\n", s);
+// 	ft_striteri(s, test_f);
+// 	printf ("Final: %s.\n", s);
+// 	return (0);
+// }
